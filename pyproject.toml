@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rs-diffuser"
+version = "0.1.0"
+description = "RS-Diffuser: Risk-Sensitive Diffusion Planning with Distributional Value Guidance"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Shiqiang Gong" }]
+dependencies = [
+    "numpy",
+    "torch",
+    "pytorch_lightning",
+    "gym>=0.13,<0.24",
+    "h5py",
+    # CleanDiffuser 请按 README 固定到指定提交单独安装
+]
+
+[tool.setuptools]
+packages = ["rs_diffuser"]
